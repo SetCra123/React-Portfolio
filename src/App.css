@@ -6,3 +6,6 @@
     color: #888;
   }
   
+img {
+    max-width: 100%;
+}
