@@ -1,7 +1,13 @@
 import NavTabs from '.components/NavTabs';
+import Logo from '.components/Logo';
 
-function App() {
-    return <NavTabs />;
+
+function Header() {
+    return <NavTabs />
+   
+    
+
+ 
 }
 
 export default Header;

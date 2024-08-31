@@ -9,7 +9,10 @@ export default function Home() {
                 I also love flying my drone and getting epic aerial footage. I spend alot 
                 of time with my kids, Amara and Setrige III. I love reading, excercising, watching anime
                 and doing fun, silly activities with my kids. </p>
+        <img src="./images/IMG_5121.png" max-height="200px" ></img>
+        
         </div>
+        
     );
 }
 

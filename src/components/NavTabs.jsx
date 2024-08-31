@@ -26,6 +26,7 @@ function NavTabs() {
                  className={currentPage === '/' ? 'nav-link active' : 'nav-link'} >Contact</Link>
                  </li>
         </ul>
+        
     );
 }
 
