@@ -27,8 +27,8 @@ export const projects = [
   {
     id: 4,
     title: "Senpai Social",
-    description: "This is a description of project two.",
-    image: "link_to_image2.jpg", // Optional
+    description: "This is a collaborative project where we created a Social Network for Anime users with full CRUD capabilities.",
+    image: "../images/SenpaiSocial.png", // Optional
     link: "https://projecttwo.com",
   },
   // Add more portfolio items here
