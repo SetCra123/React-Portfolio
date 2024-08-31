@@ -1,5 +1,5 @@
 export default function Contact() {
-    return (
+    return <h1>Contact Form</h1>
         
-    );
+    
 }
