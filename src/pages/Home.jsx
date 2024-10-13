@@ -1,8 +1,11 @@
+import '../App.css';
+
+
 export default function Home() {
     return (
-        <div className="">
-            <h1 className="">About Me</h1>
-            <p className="">I am a developer from Brooklyn, NY, who used to be a teacher and a Journalist. I taught
+        <div className="about-container">
+            <h1 className="content-wrapper">About Me</h1>
+            <p className="about-text">I am a developer from Brooklyn, NY, who used to be a teacher and a Journalist. I taught
                 middle-school Math and Coding. enjoy building apps, shooting video and 
                 playing sports. Through my Content Creation agency, Culture Media, I've shot 
                 everything from sports to events to commercials. I also played semi-pro football in New York City for a decade.
