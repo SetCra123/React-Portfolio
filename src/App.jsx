@@ -4,6 +4,7 @@ import Nav from './components/NavTabs';
 function App() {
  
   return (
+    
     <>
       <Nav />
       <main className="mx-3">
