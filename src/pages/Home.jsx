@@ -22,7 +22,7 @@ export default function Home() {
             </Col> 
             <Col md={6}>
              <div className="hero-image">
-                <img src="./images/IMG_5121.png" max-height="90px" className=""></img>
+                {/* <img src="./images/IMG_5121.png" max-height="90px" className=""></img> */}
             </div>
             </Col>
          </Row>
