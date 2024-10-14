@@ -1,9 +1,15 @@
 import '../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
+import { Container, Row, Col, } from 'react-bootstrap';  // Import React Bootstrap components
+
 
 
 export default function Home() {
     return (
-        <div className="about-container">
+        <Container>
+         <Row>
+            <Col md={6}>
+            <div className="about-container">
             <h1 className="content-wrapper">About Me</h1>
             <p className="about-text">I am a developer from Brooklyn, NY, who used to be a teacher and a Journalist. I taught
                 middle-school Math and Coding. enjoy building apps, shooting video and 
@@ -12,9 +18,18 @@ export default function Home() {
                 I also love flying my drone and getting epic aerial footage. I spend alot 
                 of time with my kids, Amara and Setrige III. I love reading, excercising, watching anime
                 and doing fun, silly activities with my kids. </p>
-        <img src="./images/IMG_5121.png" max-height="200px" className=""></img>
+              </div>
+            </Col> 
+            <Col md={6}>
+             <img src="./images/IMG_5121.png" max-height="200px" className=""></img>
+            </Col>
+         </Row>
+        </Container>
         
-        </div>
+        
+        
+        
+    
         
     );
 }
