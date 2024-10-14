@@ -9,14 +9,42 @@
 }
 
 .mx-3 {
+  display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding: 35% 5%;
 }
 
 .nav {
   padding: 5% 9% 0%;
+}
+
+.about-container {
+  width: 100%;
+
+}
+
+p {
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content-wrapper {
+  font-family: "Teachers", sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-item {
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .card {

@@ -21,7 +21,9 @@ export default function Home() {
               </div>
             </Col> 
             <Col md={6}>
-             <img src="./images/IMG_5121.png" max-height="200px" className=""></img>
+             <div className="hero-image">
+                <img src="./images/IMG_5121.png" max-height="90px" className=""></img>
+            </div>
             </Col>
          </Row>
         </Container>
