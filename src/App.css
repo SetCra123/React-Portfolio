@@ -21,6 +21,16 @@
   padding: 5% 9% 0%;
 }
 
+.logo {
+  width:70%;
+  height:0;
+  padding-bottom:100%;
+  position:relative;
+}
+
+.logo-frame {
+  position: absolute;
+}
 .about-container {
   width: 100%;
 

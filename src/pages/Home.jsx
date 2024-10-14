@@ -1,8 +1,7 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import { Container, Row, Col, } from 'react-bootstrap';  // Import React Bootstrap components
-
-
+import Logo from '../components/Logo'
 
 export default function Home() {
     return (
@@ -22,7 +21,7 @@ export default function Home() {
             </Col> 
             <Col md={6}>
              <div className="hero-image">
-                {/* <img src="./images/IMG_5121.png" max-height="90px" className=""></img> */}
+              <Logo />
             </div>
             </Col>
          </Row>
