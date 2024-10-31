@@ -1,9 +1,31 @@
-function Logo() {
-    return <div className="logo">
-            <iframe className="logo-frame" src="https://giphy.com/embed/liRTgRfK9XljrH2EFt" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen>
-            </iframe>
-            <p><a href="https://giphy.com/gifs/thecodingspacerd-coding-coder-the-space-liRTgRfK9XljrH2EFt">via GIPHY</a></p>;
-           </div>      
-}        
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+
+// const Logo = () => {
+//     return (
+//             <DotLottieReact
+//               src="path/to/animation.lottie"
+//               loop="true"
+//               autoplay="true"
+//             />
+//           );   
+// };       
+
+// export default Logo;
+
+
+// import React from 'react';
+// import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+const Logo = () => {
+  return (
+    <DotLottieReact
+      src="https://lottie.host/embed/dd578b02-4c08-4810-9983-ab48430181f5/MdlGfWSfTR.json"
+      loop
+      autoplay
+    />
+  );
+};
 
 export default Logo;

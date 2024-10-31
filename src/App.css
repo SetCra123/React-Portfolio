@@ -47,8 +47,9 @@ p {
 .content-wrapper {
   font-family: "Teachers", sans-serif;
   font-size: 4em;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
+  color: aliceblue;
 }
 
 .nav-item {
