@@ -39,7 +39,7 @@
 p {
   font-family: "Teachers", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   color: goldenrod;
 }
@@ -50,6 +50,7 @@ p {
   font-weight: 800;
   font-style: normal;
   color: aliceblue;
+  margin: 10px;
 }
 
 .nav-item {
@@ -75,6 +76,8 @@ img {
 
 .about-container {
   margin: 20px;
+  background-color: #36013f;
+  opacity: 0.8;
 }
 
 .content-wrapper {
@@ -84,7 +87,7 @@ img {
 
 .about-text {
   flex: 1; /* The text will take up available space */
-  margin-right: 10px; /* Adds space between the text and image */
+  margin: 10px; /* Adds space between the text and image */
 }
 
 .logo-container {
@@ -92,3 +95,6 @@ img {
   
 }
  
+.highlight {
+  color: #36013f;
+}

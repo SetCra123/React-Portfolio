@@ -16,7 +16,7 @@ export default function Home() {
                 everything from sports to events to commercials. I also played semi-pro football in New York City for a decade.
                 I also love flying my drone and getting epic aerial footage. I spend alot 
                 of time with my kids, Amara and Setrige III. I love reading, excercising, watching anime
-                and doing fun, silly activities with my kids. </p>
+                and doing fun, silly activities with my kids.</p>
               </div>
             </Col> 
             <Col md={6}>
