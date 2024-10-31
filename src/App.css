@@ -1,3 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  width: 100vw;
+  height: 100%;
+}
+
+.mx-3 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 5%;
+}
+
+.nav {
+  padding: 5% 9% 0%;
+}
+
+.nav-item {
+  background-color:indigo-900;
+}
+
+.logo {
+  width:70%;
+  height:0;
+  padding-bottom:100%;
+  position:relative;
+}
+
+.logo-frame {
+  position: absolute;
+}
+.about-container {
+  width: 100%;
+
+}
+
+p {
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: goldenrod;
+}
+
+.content-wrapper {
+  font-family: "Teachers", sans-serif;
+  font-size: 4em;
+  font-weight: 800;
+  font-style: normal;
+  color: aliceblue;
+  margin: 10px;
+}
+
+.nav-item {
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .card {
     padding: 2em;
   }
@@ -14,21 +80,22 @@ img {
 
 .about-container {
   margin: 20px;
+  background-color: #36013f;
+  opacity: 0.8;
 }
 
 .content-wrapper {
   display: flex;
   align-items: center; /* This vertically centers the image with the text */
-  justify-content: space-between; /* Creates space between elements */
 }
 
 .about-text {
   flex: 1; /* The text will take up available space */
-  margin-right: 20px; /* Adds space between the text and image */
+  margin: 10px; /* Adds space between the text and image */
 }
 
-.about-image {
-  max-height: 200px;
-  max-width: 200px;
-  object-fit: cover; /* Keeps the image proportionate */
+.logo-container {
+  margin-bottom: 50px;
+  
 }
+ 
