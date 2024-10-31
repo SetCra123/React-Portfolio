@@ -84,11 +84,11 @@ img {
 
 .about-text {
   flex: 1; /* The text will take up available space */
-  margin-right: 20px; /* Adds space between the text and image */
+  margin-right: 10px; /* Adds space between the text and image */
 }
 
-.about-image {
-  max-height: 200px;
-  max-width: 200px;
-  object-fit: cover; /* Keeps the image proportionate */
+.hero-image {
+  margin-bottom: 50px;
+  
 }
+ 
