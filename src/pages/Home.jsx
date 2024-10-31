@@ -20,7 +20,7 @@ export default function Home() {
               </div>
             </Col> 
             <Col md={6}>
-             <div className="hero-image">
+             <div className="logo-container">
               <Logo />
             </div>
             </Col>

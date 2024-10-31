@@ -26,7 +26,7 @@ const Logo = () => {
       src="/animation.json" // Path relative to the public folder
       loop
       autoplay
-      style={{ width: '500px', height: '500px' }}
+      style={{ width: '500px', height: '500px', marginTop: '-95px' }}
     />
   );
 };
