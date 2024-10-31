@@ -21,6 +21,10 @@
   padding: 5% 9% 0%;
 }
 
+.nav-item {
+  background-color:indigo-900;
+}
+
 .logo {
   width:70%;
   height:0;
@@ -95,6 +99,3 @@ img {
   
 }
  
-.highlight {
-  color: #36013f;
-}
