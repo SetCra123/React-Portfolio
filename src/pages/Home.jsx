@@ -14,8 +14,11 @@ export default function Home() {
         <Container>
          <Row>
             <Col md={6}>
-            <div className="about-container">
+            <div className="about-container" 
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
             <h1 className="content-wrapper">Setrige W. Crawford Jr.</h1>
+            {!hover ? (
             <p className="about-text">I am a developer from Brooklyn, NY, who used to be a teacher and a Journalist. I taught
                 middle-school Math and Coding. enjoy building apps, shooting video and 
                 playing sports. Through my Content Creation agency, Culture Media, I've shot 
@@ -23,12 +26,14 @@ export default function Home() {
                 I also love flying my drone and getting epic aerial footage. I spend alot 
                 of time with my kids, Amara and Setrige III. I love reading, excercising, watching anime
                 and doing fun, silly activities with my kids.</p>
+                ) : (
                 <div className="hidden-nav">
                   <div md={3} className="box1">Portfolio</div>
                   <div md={3} className="box2">Resume</div>
                   <div md={3} className="box3">Contact</div>
                   <div md={3} className="box4">Technologies</div>
                 </div>
+                )}
               </div>
             </Col> 
             <Col md={6}>
