@@ -84,6 +84,23 @@ img {
   opacity: 0.8;
 }
 
+.hidden-nav {
+  visibility: hidden;
+  margin: 20px;
+  background-color: #36013f;
+  opacity: 0.8;
+}
+
+.about-container:hover
+.hidden-nav {
+  visibility: visible
+}
+
+.about-container:hover
+.about-container {
+  visibility: hidden;
+}
+
 .content-wrapper {
   display: flex;
   align-items: center; /* This vertically centers the image with the text */
