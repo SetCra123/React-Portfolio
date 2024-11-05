@@ -28,10 +28,10 @@ export default function Home() {
                 and doing fun, silly activities with my kids.</p>
                 ) : (
                 <div className="hidden-nav">
-                  <div md={3} className="box1">Portfolio</div>
-                  <div md={3} className="box2">Resume</div>
-                  <div md={3} className="box3">Contact</div>
-                  <div md={3} className="box4">Technologies</div>
+                  <div className="nav-box">Portfolio</div>
+                  <div className="nav-box">Resume</div>
+                  <div className="nav-box">Contact</div>
+                  <div className="nav-box">Technologies</div>
                 </div>
                 )}
               </div>
