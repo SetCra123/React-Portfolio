@@ -3,7 +3,7 @@ import Logo from '.components/Logo';
 
 
 function Header() {
-    return <NavTabs />
+    // return <NavTabs />
    
     
 

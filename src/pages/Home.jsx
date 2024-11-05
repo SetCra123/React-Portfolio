@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NavigationLinks from '../components/NavigationLinks';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import { Container, Row, Col, } from 'react-bootstrap';  // Import React Bootstrap components
@@ -28,10 +29,10 @@ export default function Home() {
                 and doing fun, silly activities with my kids.</p>
                 ) : (
                 <div className="hidden-nav">
-                  <div className="nav-box">Portfolio</div>
+                  {/* <div className="nav-box">Portfolio</div>
                   <div className="nav-box">Resume</div>
                   <div className="nav-box">Contact</div>
-                  <div className="nav-box">Technologies</div>
+                  <div className="nav-box">Technologies</div> */}<NavigationLinks />
                 </div>
                 )}
               </div>
