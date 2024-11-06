@@ -60,7 +60,9 @@ function App() {
   return (
     <><div className="app">
       <div className="bg" id="vanta">
+      
       <Nav />
+      {location.pathname !== '/' && <Nav />}
         <main className="mx-3">
           <Outlet />
         </main>
