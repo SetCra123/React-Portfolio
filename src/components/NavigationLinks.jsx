@@ -12,7 +12,7 @@ function NavigationLinks() {
     ];
 
     return links.map((link) => (
-        <div key={link.path} className="nav-item">
+        <div key={link.path} className="nav-item nav-box">
             <Link
                 to={link.path}
                 className={currentPage === link.path ? 'nav-link active' : 'nav-link'}

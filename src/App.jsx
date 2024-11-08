@@ -1,4 +1,5 @@
-import { Outlet } from 'react-router-dom';
+// Home.js
+import { Outlet, useLocation } from 'react-router-dom';
 import Nav from './components/NavTabs';
 import RINGS from 'vanta/src/vanta.net';
 import NET from 'vanta/src/vanta.net';
@@ -60,9 +61,7 @@ function App() {
   return (
     <><div className="app">
       <div className="bg" id="vanta">
-      
       <Nav />
-      {location.pathname !== '/' && <Nav />}
         <main className="mx-3">
           <Outlet />
         </main>

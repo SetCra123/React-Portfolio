@@ -108,7 +108,8 @@ img {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  text-align: center;
+  justify-content: center;
+  display: flex;
   min-height: 8em;
   transition: background-color 0.3s ease;
 }
@@ -132,3 +133,24 @@ img {
   
 }
  
+
+
+/* Portfolio Styling */
+.portfolio-title {
+  font-family: "Teachers", sans-serif;
+  font-size: 4em;
+  font-weight: 800;
+  font-style: normal;
+  color: aliceblue;
+  margin: 10px;
+}
+
+.project-title {
+  font-family: "Teachers", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  font-style: normal;
+  color: aliceblue;
+  margin: 10px;
+
+}
