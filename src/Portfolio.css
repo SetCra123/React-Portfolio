@@ -1,0 +1,13 @@
+.hidden-description {
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 0.5s ease, padding 0.5s ease;
+    background-color: #f8f9fa;
+    padding: 0;
+  }
+
+.portfolio-item:hover .hidden-description {
+    max-width: 400px;
+    padding: 10px 20px;
+  }

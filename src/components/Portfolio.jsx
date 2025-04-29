@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import { Container, Row, Col, } from 'react-bootstrap';  // Import React Bootstrap components
 
 
-
 export const projects = [
   {
     id: 1,
@@ -46,19 +45,32 @@ export default function Portfolio() {
   
   return (
    <Container>
-   <div className="portfolio-container">
+   <div className="portfolio-container"
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeave}>
       <Row><h2 className="portfolio-title">My Portfolio</h2>
         <div className="portfolio-grid">
+        
         {projects.map((item) => (
+           
           <div key={item.id} className="portfolio-item">
-            <h3 className="project-title">{item.title}</h3>
-            <p className="project-description">{item.description}</p>
+           <div className="project-content">
+            <h3 className="project-title">{item.title}</h3> 
             {item.image && <img src={item.image} alt={item.title} width="40%" max-height="50px" />}
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               View Project
             </a>
+            </div>
+            <div className="hidden-description">
+            <p className="project-description">{item.description}</p>
+            </div>
+            
+            
           </div>
+            
+             
         ))}
+      
       </div>
     </Row>
       </div>
