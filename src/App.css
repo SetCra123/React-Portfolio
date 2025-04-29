@@ -155,6 +155,7 @@ img {
 
 }
 
+
 .hidden-description {
   max-width: 0;
   overflow: hidden;
@@ -164,7 +165,39 @@ img {
   padding: 0;
 }
 
+.project-description {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
 .portfolio-item:hover .hidden-description {
   max-width: 400px;
   padding: 10px 20px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio-item {
+  width: 45%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.project-image img {
+  width: 200px;
+  height: auto;
+  display: block;
 }
