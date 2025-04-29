@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
+import { Container, Row, Col, } from 'react-bootstrap';  // Import React Bootstrap components
 
 
 
@@ -35,16 +37,22 @@ export const projects = [
 ];
 
 
+export default function Portfolio() {
 
-const Portfolio = () => {
+  const [hover, setHover] = useState(false);
+  const handleMouseEnter = () => setHover(true);
+  const handleMouseLeave = () => setHover(false); 
+  
+  
   return (
-    <div className="portfolio-container">
-      <h2 className="portfolio-title">My Portfolio</h2>
-      <div className="portfolio-grid">
+   <Container>
+   <div className="portfolio-container">
+      <Row><h2 className="portfolio-title">My Portfolio</h2>
+        <div className="portfolio-grid">
         {projects.map((item) => (
           <div key={item.id} className="portfolio-item">
             <h3 className="project-title">{item.title}</h3>
-            <p>{item.description}</p>
+            <p className="project-description">{item.description}</p>
             {item.image && <img src={item.image} alt={item.title} width="40%" max-height="50px" />}
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               View Project
@@ -52,8 +60,11 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Row>
+      </div>
+    
+    </Container>
   );
 };
 
-export default Portfolio;
+
