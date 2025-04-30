@@ -165,10 +165,10 @@ img {
   padding: 0;
 }
 
-.project-description {
+/* .project-description {
   white-space: normal;
   word-wrap: break-word;
-}
+} */
 
 .portfolio-item:hover .hidden-description {
   max-width: 400px;
@@ -191,8 +191,8 @@ img {
 }
 
 .project-content {
-  display: flex;
-  align-items: center;
+  display: flex; /* Horizontal layout */
+  align-items: flex-start;
   position: relative;
 }
 
