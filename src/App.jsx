@@ -1,4 +1,5 @@
-import { Outlet } from 'react-router-dom';
+// Home.js
+import { Outlet, useLocation } from 'react-router-dom';
 import Nav from './components/NavTabs';
 import RINGS from 'vanta/src/vanta.net';
 import NET from 'vanta/src/vanta.net';

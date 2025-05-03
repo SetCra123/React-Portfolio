@@ -1,15 +1,25 @@
+import React, { useState } from 'react';
+import NavigationLinks from '../components/NavigationLinks';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import { Container, Row, Col, } from 'react-bootstrap';  // Import React Bootstrap components
 import Logo from '../components/Logo'
 
 export default function Home() {
+    const [hover, setHover] = useState(false);
+
+    const handleMouseEnter = () => setHover(true);
+    const handleMouseLeave = () => setHover(false);
+    
     return (
         <Container>
          <Row>
             <Col md={6}>
-            <div className="about-container">
+            <div className="about-container" 
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
             <h1 className="content-wrapper">Setrige W. Crawford Jr.</h1>
+            {!hover ? (
             <p className="about-text">I am a developer from Brooklyn, NY, who used to be a teacher and a Journalist. I taught
                 middle-school Math and Coding. enjoy building apps, shooting video and 
                 playing sports. Through my Content Creation agency, Culture Media, I've shot 
@@ -17,6 +27,14 @@ export default function Home() {
                 I also love flying my drone and getting epic aerial footage. I spend alot 
                 of time with my kids, Amara and Setrige III. I love reading, excercising, watching anime
                 and doing fun, silly activities with my kids.</p>
+                ) : (
+                <div className="hidden-nav">
+                  {/* <div className="nav-box">Portfolio</div>
+                  <div className="nav-box">Resume</div>
+                  <div className="nav-box">Contact</div>
+                  <div className="nav-box">Technologies</div> */}<NavigationLinks />
+                </div>
+                )}
               </div>
             </Col> 
             <Col md={6}>

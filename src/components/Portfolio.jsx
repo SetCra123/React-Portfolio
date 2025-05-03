@@ -1,33 +1,34 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
+import { Container, Row, Col, } from 'react-bootstrap';  // Import React Bootstrap components
 
 
 export const projects = [
   {
     id: 1,
     title: "Payroll Tracker",
-    description: "This is a project where I use Javascript to allow a yser to create a database of employees and their salaries.",
+    description: "This is a project where I use Javascript\nto allow a yser to create a database\nof employees and their salaries.",
     image: "../images/payroll.jpg",
     link: "https://github.com/SetCra123/Payroll-Calculator",
   },
   {
     id: 2,
     title: "Dinner SOS",
-    description: "This is a colloborative project, where we designed an app to help indecisive eaters find something or somewhere to eat.",
+    description: "This is a colloborative project,\nwhere we designed an app to help\nindecisive eaters find something or\ncsomewhere to eat.",
     image: "../images/dinner.jpg", 
     link: "https://github.com/SetCra123/Dinner_SOS",
   },
   {
     id: 3,
     title: "README Generator",
-    description: "This is a Node Js project that allows a user to create a cutom README file using Command Line Interface.",
+    description: "This is a Node Js project that allows a user\nto create a cutom README file using\nCommand Line Interface.",
     image: "../images/Readme1.png", 
     link: "https://github.com/SetCra123/ReadmeGenerator",
   },
   {
     id: 4,
     title: "Senpai Social",
-    description: "This is a collaborative project where we created a Social Network for Anime users with full CRUD capabilities.",
+    description: "This is a collaborative project\nwhere we created a Social Network for Anime users\nwith full CRUD capabilities.",
     image: "../images/SenpaiSocial.png", 
     link: "https://github.com/justmacn/Senpai-Social",
   },
@@ -35,25 +36,49 @@ export const projects = [
 ];
 
 
+export default function Portfolio() {
 
-const Portfolio = () => {
+  const [hover, setHover] = useState(false);
+  const handleMouseEnter = () => setHover(true);
+  const handleMouseLeave = () => setHover(false); 
+  
+  
   return (
-    <div className="portfolio-container">
-      <h2>My Portfolio</h2>
-      <div className="portfolio-grid">
+   <Container>
+   <div className="portfolio-container"
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeave}>
+      <Row><h2 className="portfolio-title">My Portfolio</h2>
+        <div className="portfolio-grid">
+        
         {projects.map((item) => (
+           
           <div key={item.id} className="portfolio-item">
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+           <div className="project-content">
+            <h3 className="project-title">{item.title}</h3> 
             {item.image && <img src={item.image} alt={item.title} width="40%" max-height="50px" />}
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               View Project
             </a>
+            </div>
+            <div className="hidden-description">
+            <p className="project-description">{item.description.split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+                ))}</p>
+            </div>
+            
+            
           </div>
+            
+             
         ))}
+      
       </div>
-    </div>
+    </Row>
+      </div>
+    
+    </Container>
   );
 };
 
-export default Portfolio;
+

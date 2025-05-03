@@ -79,9 +79,43 @@ img {
 /* About Me Section-Home Page */
 
 .about-container {
+  padding: 20px;
+  border: 1px solid #ddd; 
   margin: 20px;
   background-color: #36013f;
   opacity: 0.8;
+  transition: background-color 0.3s ease;
+}
+
+.about-text {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.hidden-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-box {
+  background-color: #1d0f42;
+  color: white;
+  padding: 15px;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  justify-content: center;
+  display: flex;
+  min-height: 8em;
+  transition: background-color 0.3s ease;
+}
+
+.nav-box:hover {
+  background-color: goldenrod;
 }
 
 .content-wrapper {
@@ -99,3 +133,71 @@ img {
   
 }
  
+
+
+/* Portfolio Styling */
+.portfolio-title {
+  font-family: "Teachers", sans-serif;
+  font-size: 4em;
+  font-weight: 800;
+  font-style: normal;
+  color: aliceblue;
+  margin: 10px;
+}
+
+.project-title {
+  font-family: "Teachers", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  font-style: normal;
+  color: aliceblue;
+  margin: 10px;
+
+}
+
+
+.hidden-description {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.5s ease, padding 0.5s ease;
+  background-color: #f8f9fa;
+  padding: 0;
+}
+
+/* .project-description {
+  white-space: normal;
+  word-wrap: break-word;
+} */
+
+.portfolio-item:hover .hidden-description {
+  max-width: 400px;
+  padding: 10px 20px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio-item {
+  width: 45%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-content {
+  display: flex; /* Horizontal layout */
+  align-items: flex-start;
+  position: relative;
+}
+
+.project-image img {
+  width: 200px;
+  height: auto;
+  display: block;
+}

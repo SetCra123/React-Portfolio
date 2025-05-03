@@ -1,13 +1,13 @@
-import NavTabs from '.components/NavTabs';
-import Logo from '.components/Logo';
+// import NavTabs from '.components/NavTabs';
+// import Logo from '.components/Logo';
 
 
-function Header() {
-    return <NavTabs />
+// function Header() {
+//     // return <NavTabs />
    
     
 
  
-}
+// }
 
-export default Header;
+// export default Header;
