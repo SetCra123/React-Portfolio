@@ -6,10 +6,10 @@ import { Container, Row, Col, } from 'react-bootstrap';  // Import React Bootstr
 export const projects = [
   {
     id: 1,
-    title: "Payroll Tracker",
-    description: "This is a project where I use Javascript\nto allow a yser to create a database\nof employees and their salaries.",
-    image: "../images/payroll.jpg",
-    link: "https://github.com/SetCra123/Payroll-Calculator",
+    title: "Gym-Buddy",
+    description: "This is an app where I use the MERN stack\nto create custom workouts\nfor a user. A user can also track progress\nand view past workouts.",
+    image: "../images/gym.jpg",
+    link: "https://github.com/SetCra123/Gym-Buddy",
   },
   {
     id: 2,
@@ -20,10 +20,10 @@ export const projects = [
   },
   {
     id: 3,
-    title: "README Generator",
-    description: "This is a Node Js project that allows a user\nto create a cutom README file using\nCommand Line Interface.",
-    image: "../images/Readme1.png", 
-    link: "https://github.com/SetCra123/ReadmeGenerator",
+    title: "JoonSTREAMS",
+    description: "This is an app, where I use the MERN stack\nto create a video streaming site.\nCurrently in development.",
+    image: "../images/Streaming.jpg", 
+    link: "https://github.com/SetCra123/JoonStreams",
   },
   {
     id: 4,
